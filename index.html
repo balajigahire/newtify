@@ -12,6 +12,20 @@
       .fs50{font-size: 50px;}
       .b-layer{ width: 100%; height: 100vh; background-color:rgba(0, 0, 0, 0.9);}
       #bg-image{width: 100%; height: 100vh; background-image: url("images/bg-1.jpg"); background-position:center top; background-size: cover; background-repeat: no-repeat;}
+
+       .blink {
+            animation: blinker 1.5s linear infinite;
+            color: #ffc107;
+            font-size: 1.5em;
+            /* Larger, responsive font size */
+            margin-bottom: 20px;
+        }
+
+        @keyframes blinker {
+            50% {
+                opacity: 0;
+            }
+        }
     </style>
 </head>
 <body>
@@ -25,8 +39,8 @@
         <div class="col-sm-12 text-center">
           <span class="bg-white px-3 py-5 rounded"><img src="./images/newtify-logo.png" width="140px" /></span>
           <h1 class="text-white mt-3"><span class="fs-5 fw-light fst-italic">Welcome to</span> <br> <span class="fw-bold fs50" style="color: #b10303;">Newtify</span></h1>
-          <P class="fs-6 text-warning"><blink>We’re launching our online presence very soon. 
-            Stay tuned for updates!</blink></P>
+          <P class="fs-6 text-warning blink">We’re launching our online presence very soon. 
+            Stay tuned for updates!</P>
 
             <p class="fs-6 text-white">
               <b class="fs-4">What We Offer</b><br>
